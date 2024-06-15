@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+
+}
+div.top>div{
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+body>div:nth-child(2){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

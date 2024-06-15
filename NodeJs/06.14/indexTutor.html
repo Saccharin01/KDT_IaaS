@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      const xhr = new XMLHttpRequest();
+      console.dir(xhr);
+      let requestMethod = "GET";
+
+      const keyName =
+        "4P6jmEbQHUbppbdiKfS%2FU%2BHVV3OqYvJwfn3bi%2FNYAK2cZaLTLIHsFPOFX3ltgeJvPZzUx09wpogScmOg7IwC6Q%3D%3D";
+
+      const requestUrl = `
+      http://apis.data.go.kr/6300000/eventDataService/eventDataListJson?serviceKey=${keyName}&numOfRows=10&pageNo=1`;
+
+      xhr.open(requestMethod, requestUrl, true);
+      xhr.send();
+
+      xhr.addEventListener('load', () => {
+        if(xhr.status === 200) {
+          console.log("200 코드는 성공 코드이다.");
+          // console.dir(xhr.responseText);  
+          const result = JSON.parse(xhr.responseText);
+          console.dir(typeof(result)); 
+          console.dir(result);
+          console.dir(result.msgBody);
+          console.log(result.msgBody[0]);
+          console.log(result.msgBody[0].title);   // console.log("test");
+
+
+          const root = document.getElementById('root');
+
+          let lists = [];
+
+          result.msgBody.forEach((item) => {
+            lists.push(`<li>${item.title}</li>`);
+          });
+
+          console.log(lists.join(''));
+
+          root.innerHTML = `<ul>${lists.join('')}</ul>`;
+
+        }
+      });
+    </script>
+  </body>
+</html>

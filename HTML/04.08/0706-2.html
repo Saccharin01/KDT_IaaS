@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06번</title>
+</head>
+<style>
+  div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 900px;
+  }
+ div>div {
+   flex-direction: column;
+   background-color: red;
+   border: 1px solid black;
+   flex: 1 1 20%;
+  }
+
+  div>div {
+  flex-direction: column;
+   background-color: green;
+   border: 1px solid black;
+   flex: 5 5 50%;
+ }
+
+  div>div {
+  flex-direction: column;
+  background-color: blue;
+  border: 1px solid black;
+  flex: 3 3 30%;
+ }
+
+
+
+</style>
+
+<body>
+  <div>
+    <div>1</div>
+      
+
+    <div>2</div>
+  
+    <div>3</div>
+
+
+
+
+  </div>
+</body>
+</html>

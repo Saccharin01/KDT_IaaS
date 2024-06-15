@@ -1,0 +1,19 @@
+.title{
+  display: grid;
+  justify-content: center;
+  grid-area: title;
+}  
+.title>div:nth-child(1){
+  /* margin: 10% 0 10% 0; */
+  padding: 5%;
+  display: flex;
+
+}
+.title>div:nth-child(1){
+  font-family: 'gasoek one', monospace;
+  font-size: 100%;
+  /* *vw값으로 제어하려고 하니까 이상해짐*/
+  text-align: center;
+  background-color: blue;
+}
+

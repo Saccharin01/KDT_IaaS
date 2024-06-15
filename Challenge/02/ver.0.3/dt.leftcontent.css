@@ -1,0 +1,38 @@
+/* .leftcontent{
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  margin-left: 5%;
+  margin-right: 20%;
+  margin-top: 5%;
+  overflow: auto;
+}
+.leftcontent>div{
+} */
+
+
+.premise{
+  grid-area: premise;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+
+.primary{
+  grid-area: primary;
+  margin-right: 30%;
+  overflow: auto;
+}
+
+
+.object{
+  grid-area: object;
+  margin-top: 10px;
+  overflow: auto;
+  margin-right: 10%;
+  margin-bottom: 10px;
+}

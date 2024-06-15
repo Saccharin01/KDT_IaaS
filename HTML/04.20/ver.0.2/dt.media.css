@@ -1,0 +1,15 @@
+.media{
+  grid-row: 2/9;
+  grid-column: 5/10;
+  margin: 5% 3% 5% 0;
+}
+.media>div:nth-child(1){
+  height: 100%;
+  overflow: auto;
+}
+.media>div:nth-child(1)>details>summary{
+  background-color: bisque;
+  border-radius: 10px;
+  margin: 5%;
+}
+

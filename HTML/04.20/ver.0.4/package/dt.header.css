@@ -1,0 +1,40 @@
+.title{
+  display: flex;
+  grid-area: title;
+  min-height: fit-content;
+  margin: 5px;
+  padding-bottom: 5%;
+  background-image: url(back.png);
+  
+}
+
+.title>div:nth-child(1){  
+  display: flex;
+  /* background-color: yellow; */
+  flex-direction: column;
+  font-family:  "Black Han Sans", 'gasoek one', monospace;
+  font-size: 80%;
+  
+}
+/* ? 헤더라인 */
+
+
+
+.header{
+  display: grid;
+  justify-content: center;
+  grid-area: header;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+}  
+.header>div:nth-child(1){
+  font-family: 'yeon sung';
+  font-size: 2vh;
+  background-color: rgb(252, 99, 99);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  }

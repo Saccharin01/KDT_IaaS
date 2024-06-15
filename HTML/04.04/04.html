@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>보상 주기(Reward Cycle)</title>
+  <style>
+    body{
+      background-color: rgb(219, 141, 32);
+    }
+    h1{
+      text-align: center;
+      border-bottom: dotted;
+      border-color: black;
+      color: rgb(121, 139, 240);
+      padding-bottom: 10px;
+    }
+    .henzel-ex{
+      text-align: center;
+      font-weight: bold;
+      color: black;
+      background-color: antiquewhite;
+      margin: auto;
+      border: 3px solid;
+      border-color: rgb(253, 240, 212);
+
+    }
+    b:nth-child(2) {
+      text-align: left;
+      font-weight: bold;
+      color: black;
+      background-color: antiquewhite;
+      margin: auto;
+      border: 3px solid;
+      border-color: rgb(253, 240, 212);
+    }
+    
+    span{
+      text-align: left;
+      font-weight: bold;
+      color: black;
+      background-color: antiquewhite;
+      margin: auto;
+      border: 3px solid;
+      border-color: rgb(253, 240, 212);
+    }
+    div{
+      margin-left: 50px;
+      margin-right: 50px;
+      border: dotted;
+      border-color: rgb(252, 181, 252);
+      background-color: blue;
+    }
+    li{
+      margin-left: 5px;
+      text-decoration: underline;
+    }
+    </style>
+
+<!-- *b nth-child(2)이거 왜 안먹는지 알아봐 -->
+<!-- *b nth-child(1)이거는 보상주기에 먹혔음 -->
+
+
+<!-- *부모자식 관계 설정에 오류가 있었음. "게임"에 br태그 뒤에 p태그가 없었음.  -->
+<!-- *상술한 오류를 수정하니, "보상주기"와 "게임"은 p태그에 종속된 제1 자식이라는 판정으로 들어갔음. -->
+<!-- *그렇다면 "게임"을 제2의 자식으로 종속시키기 위해선 어떤식으로 했어야 하지? -->
+<!-- *이거 암만 생각해도 들여쓰기 잘못 하고 있는거 같은데... 코드가 이상해 -->
+
+<!-- ! 찾았음. P태그가 한 20개 쓰였고 그 속에 각각 한 번씩 b태그를 설정했다고 했을 때, 각 b태그는 제 1 자식임. 15번째 p태그의 b태그는 15번째의 자식이 아님. Test.html 참조바람.-->
+
+
+</head>
+
+
+
+
+<body>
+  <div>
+    <!-- *단순히 텍스트에 볼드 값만 주고싶어도 CSS를 활용해서 표현하는 편이 좋은가? 아니면 <B>를 이용해도 무관한가? -->
+      <h1>동기 부여와 보상 주기</h1>
+      
+      
+
+  <p><b>보상 주기(Reward Cycle)</b>는 어떤 말일까요? 보상을 줘서 "보상 주기"일까요? 괄호에 달린 영어로 미뤄보건데 그런 뜻은 아닐거 같네요. 보상주기는 "보상 심리" 라는 말과 도 밀접하며 비슷한 표현으로 "Reward System"이라는 단어도 있는거 같네요. 뭔가 단어가 알듯말듯 오묘한 표현입니다. 예를 한번 들어봅시다.<br>
+  어릴 적 들어본 적이 있는 헨젤과 그레텔이라는 동화에는 이런 장면이 나옵니다.</p>
+    <span>"조그마한 빵 조각을 쫒아가다보면 커다란 과자 집이 나온다."</span>
+  <p>다소의 각색이 들어간 부분이기도 합니다만, 우리가 헨젤과 그레텔의 모습을 상상했을 때 가장 먼저 떠오르는 장면이기도 합니다. 이 부분을 통해서 우리는 보상주기라는 단어가 우리에게 전달하려는 의미를 짐짓 미루어 볼 수 있을거 같네요.</p>
+
+  <h3>긴 보상주기와 짧은 보상주기</h3>
+  <p>소제목의 내용은 이미 앞선 예시에 녹아있는 내용이기도 합니다. 짧은 주기의 보상(빵 조각) 과 긴 주기의 보상(과자 집)이 바로 그것입니다. 다르게 예시를 들어보자면 배달 음식의 쿠폰도 꽤 괜찮은 예시가 될 거 같네요.<br>
+  이렇듯 오늘날의 생활에는 우리가 알게 모르게 긴 보상주기와 짧은 보상주기가 복합적으로 설정이 되어있는 경우가 많습니다. 한번 생각해봅시다. 짧은 보상주기를 가진 대상은 어떤게 있을까요??</p>
+<!-- *link태그 와 a태그의 차이는? -->
+<!-- *집에 가면 나무위키 한번 뜯어봐라 -->
+<!-- *&nbsp??? -->
+  <!-- <li>자판기</li>
+  <li>게임</li> -->
+    <br><p>대표적으로는 이 두 종류, 특히 두번째 예시인 <b>게임</b>이 눈에 띄네요. 게임은 학습에 있어서 다분히 부정적인 영향을 끼치는것으로 익히 알고있는데, 그 이유는 게임의 보상주기는 굉장히 짧게 설정되어 있기 때문입니다.
+    그럼 보상주기가 짧은 것은 무조건적인 독일까요?</p>
+     <span>마냥 그렇지많은 않습니다.</span> 
+    <p>마케팅 적인 측면으로 봤을 때, 소비에 대한 보상주기가 짧아야 뒤따라오는 재소비가 촉진되는 효과가 있습니다. 물론 우리의 지갑에서 돈이 빠져나간다는 측면으로 봤을 때, 보상 주기가 짧다는 건 "단점"에 해당되겠네요.
+</p>
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function whatWork(inputString){
+      // whatwork 함수 는 inputString 이라는 매개변수를 가진다
+      let result = ""
+      let isWhatWorked = false
+      let space= ""
+      // whatWork의 함수 안에는 세 개의 지역 변수가 존재
+      for(let i = 0; i <inputString.length; i++){
+        // inputString의 인덱스 값을 추출
+        if (inputString[i] !== space) {
+          // inputString[i]의 값이 지역변수 space(undifined)와 다르다면 true,
+          //  inputString[i]값이 입력이 되어있다면
+          if(isWhatWorked === true) {
+            result = result + inputString[i];
+            // isWhatWorked의 값이 데이터 타입을 포함해서 동일한 true라면
+            // result = result + inputString[i];
+            // 해당 구문이 실행됨 
+            // 공백은 공백 + 매개변수의 요소 만큼의 값을 할당 받는다
+          } else{
+
+            if(inputString[i] !== space){
+          // inputString[i]의 값이 지역변수 space(undifined)와 다르다면 true,
+              isWhatWorked = true;
+              // isWhatWorked의 불리언 값이 true로 재 할당 됨
+              result = result + inputString[i];
+              // 복합 대입 연산
+              // 공백 + 문자열을 result의 값으로 "대입"한다
+
+            }
+          }
+        }
+      }
+      return result;
+    }
+
+    /**
+     * ! 총평
+     * *쥰내 재귀함수 처럼 생김
+     * * 매개변수가 공백이 아니라면 if문을 두번 지나서 result = result + inputString[i]; 의 값을 가지고 나오고
+     * * 맞는듯?
+     * * 처음 들어갔을 때는 isWhatWorked의 값이 false일건데 그럼 두번째 if문에서 else로 빠져나가게 됨
+     * * 그 상황에서 if문의 첫번째는 두번째 if문의 else까지 감싸고 있기 때문에
+     * * isWhatWorked라는 변수의 값은 false에서 true로 재 할당되고 위로 끌어올려짐
+     * * isWhatWorked의 값이 true로 바뀌었기 때문에 두 번째 if문의 값을 가진 체로 함수를 탈출하게 됨
+    */
+    // function whatWork(inputString){
+    //   let a = ""
+    //   let b = false
+    //   let c= ""
+
+    //   for(let i = 0; i <b.length; i++){
+    //     if (b[i] !== c) {
+    //       if(b === true) {
+    //         a = a + b[i];
+    //       } else{
+    //         if(b[i] !== c){
+    //           b = true;
+    //           a = a + b[i];
+    //         }
+    //       }
+    //     }
+    //   }
+    //   return a;
+    // }
+    /**
+     *  * inputString[i]의 값이 undifined이 아니라면 True*/
+    /**
+     * * isWhatWorked의 값이 데이터타입이 동일하고 true라면
+     */
+    /**
+     * *undifined = undifined + inputString[i]
+     */
+
+    const quotes = '성공은 결과이지 목적이 아니다. 목적은 당신이 무엇을 하느냐이다.';
+    const trimmedQuotes = whatWork(quotes);
+    console.log(trimmedQuotes)
+  </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "05.17",
+  "version": "1.0.0",
+  "description": "서버 연동 데이터베이스",
+  "main": "dataBase.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"조우식\"",
+  "license": "MIT",
+  "dependencies": {
+    "xhr2": "^0.2.1"
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="root">
+
+      <label for="theme">choose your theme</label>
+      <select name="themeColor" id="themeColor">
+        <option value="white">white</option>
+        <option value="black">black</option>
+      </select>
+
+
+    <div class="header">
+      <h1>이것은 다크 테마 실험을 위해서 만들어진 html 문서입니다</h1>
+    </div>
+    
+    <div class="content">
+      <h1>안녕하세요</h1>
+      <h2>안녕하세요</h2>
+      <h3>안녕하세요</h3>
+      <h4>안녕하세요</h4>
+      <h5>안녕하세요</h5>
+    </div>
+    
+    <div class="footer">
+      이것은 다크 테마 실험을 위해 만들어진 문서입니다!
+    </div>
+  </div>
+  
+  <!-- <script src="junk.js"></script> -->
+  <script>
+    const Select = document.querySelector('select')
+    const body = document.querySelector('body')
+
+
+function change(a, b){
+  body.style.backgroundColor = a;
+  body.style.color = b;
+}
+
+
+if(Select.value === "white"){
+  change("white", "black")
+}
+else{
+  change("black", "white")
+}
+console.log(Select.value)
+
+
+
+// function update(bgColor, textColor) {
+//     html.style.backgroundColor = bgColor;
+//     html.style.color = textColor;
+// }
+
+// select.onchange = function () {
+//     select.value === "black"
+//         ? update("black", "white")
+//         : update("white", "black");
+// };
+  </script>
+</body>
+</html>

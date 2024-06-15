@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events: Task 1</title>
+</head>
+
+<body>
+
+  <section class = "preview">
+  </section>
+
+  <button class="off">Machine is off</button>
+
+<script>
+  const btn = document.querySelector('.off');
+  // Add your code here
+
+const body = document.querySelector('body')
+
+  console.dir(btn)
+
+
+btn.addEventListener('click', ()=>{
+  if(btn.innerHTML == 'Machine is off'){
+    btn.innerHTML = 'Machine is on'
+    console.log(1)
+  }else{
+    btn.innerHTML = 'Machine is off'
+    console.log(2)
+  }
+
+
+})
+
+
+
+
+  // body.addEventListener('click', (e)=>{
+  //   if(e.target.className){
+  //         btn.innerHTML = 'Machine is on'
+  //         console.log(1)
+  //   }else if (btn.innerHTML == 'Machine is on')
+  //   btn.innerHTML = 'Machine is off'
+  //   console.log(2)
+  // })
+      
+    
+  //   btn.innerhtml !== 'Machine is off' || btn.innerHTML == !'Machine is on'){
+
+  //     console.log(1)
+
+  //   }else if(btn.innerHTML == 'Machine is on'){
+  //     btn.innerHTML = 'Machine is off'
+  //     console.log(2)
+  //   }
+  // })
+
+
+
+
+</script>
+
+</body>
+</html>

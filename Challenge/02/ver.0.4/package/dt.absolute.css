@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+}
+
+
+  
+
+
+  
+  .wrap{
+    height: 98vh;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: bisque;
+  font-size: 2vh;
+  grid-template-areas:
+
+  "title title title title"
+
+  "header header header header"
+
+  "premise premise medPrimary medPrimary "
+
+  "primary primary medPrimary medPrimary"
+
+  "primary primary medPrimary medPrimary"
+
+  "object object medPrimary medPrimary"
+
+  "object object medPrimary medPrimary"
+
+  "object object annotation annotation"
+
+  "footer footer footer footer";
+  
+  
+  
+}
+
+.wrap>div{
+  background-color: rgb(255, 222, 161);
+  border: 1px solid orangered;
+}

@@ -1,0 +1,18 @@
+.header{
+  display: grid;
+  justify-content: center;
+  grid-row: 1/2;
+  grid-column: 1/9;
+}  
+.header>div:nth-child(1){
+  /* margin: 10% 0 10% 0; */
+  padding: 5%;
+  display: flex;
+
+}
+.header>div:nth-child(1)>p{
+  font-family: 'gasoek one', monospace;
+  font-size: 100%;
+  /* *vw값으로 제어하려고 하니까 이상해짐*/
+  text-align: center;
+}

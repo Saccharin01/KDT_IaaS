@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20240410_웹프로그래밍기본_평가제출_조우식</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      overflow: scroll;
+    }
+    
+      body>div{
+        display: flex;
+        background-color: rgb(143, 143, 143);
+        border: 2px solid black;
+        width: 100vw;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+      }
+/* 1번 div */
+
+        body>div>div:nth-child(1){
+          display: flex;
+          justify-content: center;
+          border: 1px solid black;
+          background-color: rgb(197, 197, 197);
+        }
+          body>div>div:nth-child(1)>span{
+            border: 1px solid black;
+            background-color: rgb(126, 126, 126);
+          }
+/* 1번 div */
+
+/* 2번 div */
+
+        body>div>div:nth-child(2){
+        border: 1px solid black;
+        background-color: rgb(80, 80, 80);
+        }
+          body>div>div:nth-child(2)>div{
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+            }
+            body>div>div:nth-child(2)>div:nth-child(1)>link{
+              justify-content: center;
+            }
+/* 2번 div */
+
+/* 3번 div */
+
+        body>div>div:nth-child(3){
+          border: 1px solid black;
+          background-color: rgb(216, 175, 255);
+        }
+
+          body>div>div:nth-child(3)>div{    
+          display: flex;
+          justify-content: center;
+          }
+          body>div>div:nth-child(3)>div:nth-child(1){
+            padding-top: 50px;
+            padding-bottom: 10px;
+          }  
+          body>div>div:nth-child(3)>div:nth-child(2){
+          padding-bottom: 20px;
+          }
+/* 3번 div */
+
+/* 4번 div */
+        body>div>div:nth-child(4){
+          border: 1px solid black;
+          background-color: rgb(135, 199, 255);
+        }
+          body>div>div:nth-child(4)>div{
+          display: flex;
+          justify-content: center;
+          }
+
+          body>div>div:nth-child(4)>div:nth-child(1){
+            padding-top: 50px;
+            padding-bottom: 10px;
+          }
+          body>div>div:nth-child(4)>div:nth-child(2){
+            padding-bottom: 20px;
+            }
+/* 4번 div */
+
+/* 5번 div */
+        body>div>div:nth-child(5){
+          border: 1px solid black;
+          background-color: rgb(240, 240, 166);
+        }
+          body>div>div:nth-child(5)>div{
+            display: flex;
+            justify-content: center;
+          }
+          body>div>div:nth-child(5)>div:nth-child(1){
+            padding-top: 50px;
+          }
+        /* body>div>div:nth-child(5)>div:nth-child(2)*/
+/* 5번 div */
+
+/* 6번 div */
+        body>div>div:nth-child(6){
+          border: 1px solid black;
+          background-color: rgb(255, 188, 63);
+        }
+          body>div>div:nth-child(6)>div{
+            display: flex;
+            justify-content: center;
+          }
+/* 6번 div */
+
+/* 7번 div */
+        body>div>div:nth-child(7){
+          border: 1px solid black;
+          background-color: rgb(255, 140, 98);
+        }
+          body>div>div:nth-child(7)>div{
+            display: flex;
+            justify-content: center;
+          }
+/* 7번 div */
+
+/* 8번 div */
+        body>div>div:nth-child(8){
+          border: 1px solid black;
+          background-color: cadetblue;
+        }
+          body>div>div:nth-child(8)>div:nth-child(1){
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+          }
+          body>div>div:nth-child(8)>div:nth-child(1)>div:nth-child(1){
+            display: flex;
+            justify-content: center;
+          }
+          body>div>div:nth-child(8)>div:nth-child(1)div:nth-child(2){
+            display: flex;
+            justify-content: center;
+          }
+          body>div>div:nth-child(8)>div:nth-child(1)div:nth-child(3){
+            display: flex;
+            justify-content: center;
+          }
+
+
+     
+
+
+
+
+
+
+
+  </style>
+</head>
+
+<!-- todo 전달해주신 시안 살펴보고 기본적인 박스 모델 레이아웃 전달 해드립니다.-->
+<!-- todo 각 div는 임의로 1~20번의 숫자가 기입 되어있습니다. 해당 부분은 디자인 에셋 삽입 과정에서 삭제 부탁드립니다. -->
+<!-- todo div에 대한 설명은 따로 주석 처리 해서 마킹 해놓았습니다. div에 대한 설명은 모두 전달해주신 디자인 시안을 바탕으로 설명 해드리고 있습니다. 참고 부탁드립니다.-->
+
+<body>
+  <div>
+    <!-- todo 페이지 최 상단에 수납되는 부분입니다. -->
+    <div>1
+      <span>-------------------set your location------------------</span>
+    </div>
+    <!-- todo   -->
+    <div>2
+      <div>
+        <span>제품 안내 배너입니다. 이 안에 텍스트를 입력하십시오.</span>
+        <a href="link">link </a>
+      </div>
+      <div>이미지</div>
+      <div>구입하기</div>
+      <div>가격</div>
+    </div>
+
+    <div>3
+      <div>헤더 텍스트 <a href="vid1">동영상1</a> <a href="vid2">동영상 2</a>
+      </div>
+     
+      <div>겔러리 슬라이드</div>
+
+    </div>
+
+    <div>4
+      <div>헤더</div>
+      <div>이미지 슬라이드</div>
+    </div>
+
+
+    <div>5
+      <div>text</div>
+      <div>------------------프로젝트 슬라이드------------------</div>
+    </div>
+
+    <!-- todo A17 pro칩, 게임 평정 괴물 프로세서 부분입니다. 하위 부분으로는 이미지 에셋과 gpu에 관련된 항목이 들어있습니다. -->
+    <div>6
+      <div>헤드</div>
+      <div>product img</div>
+      <div>Description</div>
+    </div>
+
+    <!-- todo 상상 이상의 디테일까지 포착해주는 카메라 텍스트 파트와 이미지 파트를 별도로 분리 했습니다. 디자인 팀에서 텍스트까지 포함하는 이미지 에셋을 준비하셨다면 별도로 연락 부탁드립니다.-->
+    <div>7
+      <div>cam Description</div>
+      <div>cam Description image</div>
+    </div>
+
+    <div>8
+      <div>
+        <div>
+          실험 텍스트
+        </div>
+
+        <div>
+          ------------------  이미지 슬라이드------------------
+        </div>
+        <div>
+          <span>
+            0.5x 울트라 와이드 접사
+          </span>
+        </div>
+      </div> 
+      
+      <div>
+        이미지 박스
+
+      </div>
+    </div>
+    
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div>20</div>
+
+
+
+
+
+
+
+  </div>
+</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "#comment": "",
+  "html": {
+    "@lang": "en",
+    "head": {
+      "meta": [
+        {
+          "@charset": "UTF-8"
+        },
+        {
+          "@name": "viewport",
+          "@content": "width=device-width, initial-scale=1.0"
+        }
+      ],
+      "title": "Document"
+    },
+    "body": {
+      "div": {
+        "@id": "root",
+        "h1": "이 파일은 데이터베이스에서 만들어졌습니다."
+      }
+    }
+  }
+}

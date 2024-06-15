@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  border-radius: 14px;
+}
+
+.discription{
+  background-color: rgb(255, 241, 44);
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-left: 1%;
+  margin-right: 1%;
+  }
+  
+
+
+.wrap>div{
+  
+  background-color: rgb(255, 188, 63);
+  border: 1px solid orangered;
+}
+
+.wrap{
+  height: 98vh;
+  width: 95vw;
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  margin-left: 3%;
+  margin-right: 3%;
+  background-color: bisque;
+  font-size: 2vh;
+  grid-template-areas:
+  "title title title"
+  "header header header"
+  ". . . "
+  "premise . medPrimary"
+  "primary . ."
+  "object . medObject"
+  ". . ."
+  "annotation annotation annotation"
+  "footer footer footer"
+
+}

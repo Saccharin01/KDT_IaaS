@@ -1,0 +1,12 @@
+.medPrimary{
+  grid-area: medPrimary;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  overflow: auto;
+  margin-top: 40px;
+}
+
+/* todo 항목 최대값 조정 + 오버플로우 오토로 스크롤 만들기 */
+.medObject{
+  grid-area: medObject;
+}

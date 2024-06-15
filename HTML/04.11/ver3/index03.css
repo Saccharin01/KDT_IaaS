@@ -1,0 +1,227 @@
+:root{
+  --sb: 1px solid black
+}
+
+/* 변수 값 선언 및 할당 */
+
+*{
+  margin: 0;
+  padding: 0;
+}     
+  .wrap{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(49, 49, 49);
+  }
+  .wrap>div{
+    height: 50vh;
+  }
+    .location{
+      background-color: rgb(241, 40, 40);
+      border:var(--sb);
+    }
+    .location>div{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      /* justify-content: space-evenly; */
+    }
+    
+    
+        .titnum{
+        border: var(--sb);
+        background-color: rgb(80, 80, 80);
+      }
+      .titnum>div:nth-child(1){
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+      .titnum>div:nth-child(2){
+        text-align: center;
+      }
+      .titnum>div:nth-child(3){
+        display: flex;
+        justify-content: center;
+      }
+      .titnum>div:nth-child(4)>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      }
+        
+        
+/* 2번 div */
+
+/* 3번 div */
+
+        body>div>div:nth-child(3){
+          border: 1px solid black;
+          background-color: rgb(216, 175, 255);
+        }
+
+          body>div>div:nth-child(3)>div{    
+          display: flex;
+          justify-content: center;
+          }
+          body>div>div:nth-child(3)>div:nth-child(1){
+            padding-top: 50px;
+            padding-bottom: 10px;
+          }  
+          body>div>div:nth-child(3)>div:nth-child(2){
+          padding-bottom: 20px;
+          }
+/* 3번 div */
+
+/* 4번 div */
+        body>div>div:nth-child(4){
+          border: 1px solid black;
+          background-color: rgb(135, 199, 255);
+        }
+          body>div>div:nth-child(4)>div{
+          display: flex;
+          justify-content: center;
+          }
+
+          body>div>div:nth-child(4)>div:nth-child(1){
+            padding-top: 50px;
+            padding-bottom: 10px;
+          }
+          body>div>div:nth-child(4)>div:nth-child(2){
+            padding-bottom: 20px;
+            }
+/* 4번 div */
+
+/* 5번 div */
+        body>div>div:nth-child(5){
+          border: 1px solid black;
+          background-color: rgb(240, 240, 166);
+        }
+          body>div>div:nth-child(5)>div{
+            display: flex;
+            justify-content: center;
+          }
+          body>div>div:nth-child(5)>div:nth-child(1){
+            padding-top: 50px;
+          }
+/* 5번 div */
+
+/* 6번 div */
+        body>div>div:nth-child(6){
+          border: 1px solid black;
+          background-color: rgb(255, 188, 63);
+        }
+          body>div>div:nth-child(6)>div{
+            display: flex;
+            justify-content: center;
+          }
+/* 6번 div */
+
+/* 7번 div */
+        body>div>div:nth-child(7){
+          border: 1px solid black;
+          background-color: rgb(255, 140, 98);
+        }
+          body>div>div:nth-child(7)>div{
+            display: flex;
+            justify-content: center;
+          }
+/* 7번 div */
+
+/* 8번 div */
+        body>div>div:nth-child(8){
+          border: 1px solid black;
+          background-color: cadetblue;
+        }
+          body>div>div:nth-child(8)>div:nth-child(1){
+            background-color: wheat;
+          }
+
+            body>div>div:nth-child(8)>div:nth-child(1)>div:nth-child(1){
+              display: flex;
+              justify-content: center;        
+            }
+            body>div>div:nth-child(8)>div:nth-child(1)>div:nth-child(2){
+              display: flex;
+              justify-content: center;
+            }
+            body>div>div:nth-child(8)>div:nth-child(1)>div:nth-child(3){
+              display: flex;
+              justify-content: center;
+            }
+          body>div>div:nth-child(8)>div:nth-child(2){
+            background-color: chocolate;
+          }
+          body>div>div:nth-child(8)>div:nth-child(2)>div:nth-child(1){
+              display: flex;
+              justify-content: center;
+              flex-direction: row;
+              padding-top: 10px;
+              padding-bottom: 10px;
+          }
+/* 8번 div */
+
+/* 9번 div */
+        body>div>div:nth-child(9){
+          border: 1px solid black;
+          background-color: violet;
+        }
+        body>div>div:nth-child(9)>div:nth-child(1){
+          background-color: rgb(238, 55, 238);
+        }
+
+        body>div>div:nth-child(9)>div:nth-child(1)>div:nth-child(1){
+          height: 30%;
+          display: flex;
+          justify-content: center;
+          padding-top: 10px;
+
+        }
+        body>div>div:nth-child(9)>div:nth-child(1)>div:nth-child(2){
+          height: 50%;
+          display: flex;
+          justify-content: center;
+        }
+        body>div>div:nth-child(9)>div:nth-child(1)>div:nth-child(3){
+          height: 20%;
+          display: flex;
+          justify-content: center;
+          padding-bottom: 5px;
+        }
+        body>div>div:nth-child(9)>div:nth-child(2){
+          background-color: rgb(143, 75, 143);
+        }
+        body>div>div:nth-child(9)>div:nth-child(2)>div:nth-child(1){
+          display: flex;
+          justify-content: center;
+        }
+        body>div>div:nth-child(9)>div:nth-child(2)>div:nth-child(2){
+          display: flex;
+          justify-content: center;
+          padding-bottom: 20px;
+        }
+        body>div>div:nth-child(9)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1){
+          display: flex;
+          padding-right: 5px;
+        }
+        body>div>div:nth-child(9)>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
+          display: flex;
+          padding-left: 5px;
+        }
+/* 9번 div */
+
+
+
+
+
+
+     
+
+
+
+
+
+

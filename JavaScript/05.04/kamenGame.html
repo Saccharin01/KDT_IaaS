@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>카멘 격돌 연습</title>
+	<style>
+		html, body { padding: 0; margin: 0; background-color: grey; overflow: hidden; }
+
+		div { box-sizing: border-box; }
+		.beat { position: absolute; width: 600px; height: 600px; }
+		.beat > * { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: border-color 0.1s; }
+		.beat .inner { width: 50%; height: 50%; border: 18px solid #7fffff; border-radius: 50%; }
+		.beat .outer { width: 100%; height: 100%; border: 6px solid #59e4ff; border-radius: 50%; }
+		.beat .key { width: 60px; height: 60px; background-color: #f4e7c6; color: #7d5a1c; font-weight: bold; border-radius: 10px; display: flex; justify-content: center; align-items: center; font-size: 34px; }
+		.beat .result { color: white; top: 50%; padding-top: 50%; font-weight: bold; display: flex; justify-content: center; align-items: center; font-size: 54px; }
+		.beat .resultRing { border-width: 10px; border-style: solid; border-radius: 50%; width: 50%; height: 50%; }
+		
+		.beat.bad .result { text-shadow: 0px 0px 5px red,0px 0px 10px red,0px 0px 15px red; }
+		.beat.bad .inner { border-color: rgb(206, 98, 98); }
+		.beat.bad .outer { border-color: red; }
+
+		.beat.good .result { text-shadow: 0px 0px 5px #7fffff,0px 0px 10px #7fffff,0px 0px 15px #7fffff; }
+		.beat.good .resultRing { border-color: #59e4ff; }
+
+		.beat.perfect .result { text-shadow: 0px 0px 5px rgba(125, 90, 28, 1),0px 0px 10px rgba(125, 90, 28, 1),0px 0px 15px rgba(125, 90, 28, 1); }
+		.beat.perfect .inner { border-color: #e2a555; }
+		.beat.perfect .outer { border-color: #e3b274; }
+		.beat.perfect .resultRing { border-color: #e3b274; }
+
+
+		.score { position: fixed; top: 0; left: 0; font-size: 24px; padding: 10px 20px; margin: 10px; z-index: 1000; color: white; background-color: rgba(0, 0, 0, 0.8); }
+		.score > * { display: flex; }
+		.score .label { width: 120px; text-align: right; padding-right: 20px; }
+		.score .count { font-weight: bold; }
+		
+
+		.circle { position: absolute; top: 50%; left: 50%; width: 600px; height: 600px; }
+		.circle > div { position: absolute; top: 0; left: 0; transform: translate(-50%, -50%); }
+		.circle .inner {
+			width: 300px;
+			height: 300px;
+			border: 18px solid #7fffff;
+			border-radius: 50%;
+		}
+		.circle .outer {
+			border: 6px solid #59e4ff;
+			border-radius: 50%;
+			width: 600px; height: 600px;
+		}
+		.circle.bad .outer {
+			border-color: red;
+		}
+		.circle.perfect .outer {
+			border-color: #e3b274;
+		}
+
+		.circle .key {
+			background-color: #f4e7c6;
+			color: #7d5a1c;
+			font-weight: bold;
+			border-radius: 10px;
+			width: 60px;
+			height: 60px;
+			display: flex;
+			justify-content: center;
+    		align-items: center;
+			font-size: 34px;
+		}
+		.circle.bad .result {
+			text-shadow: 0px 0px 5px red,0px 0px 10px red,0px 0px 15px red;
+		}
+		.circle.perfect .result {
+			text-shadow: 0px 0px 5px rgba(125, 90, 28, 1),0px 0px 10px rgba(125, 90, 28, 1),0px 0px 15px rgba(125, 90, 28, 1);
+		}
+		.circle .result {
+			color: white;
+			top: 170px;
+			transform: translate(-50%, -50%);
+			font-weight: bold;
+			display: flex;
+			justify-content: center;
+    		align-items: center;
+			font-size: 54px;
+		}
+
+		#score {
+			font-size: 24px;
+			font-weight: bold;
+			padding: 20px;
+		}
+
+		.overlay {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.8);
+			z-index: 999;
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 24px;
+			flex-direction: column;
+		}
+		.overlay div {
+			margin: 20px 0;
+		}
+		.overlay div.small {
+			font-size: 16px;
+		}
+		.overlay div label {
+			margin-left: 40px;
+		}
+		.overlay div label:first-of-type {
+			margin-left: 0;
+		}
+		.overlay p {
+			margin: 10px 0 4px 0;
+		}
+		.overlay.hide {
+			display: none;
+		}
+
+		.hidden {
+			position: absolute;
+			top: 0;
+			width: 0;
+			opacity: 0;
+			font-size: 0;
+		}
+
+		#background-video {
+			display: none;
+			width: 100vw;
+			height: 100vh;
+			object-fit: cover;
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			z-index: -1;
+		}
+	</style>
+	<script src="./anime.min.js"></script>
+</head>
+<body>
+	<h1 class="hidden">카멘 격돌 연습</h1>
+	<div class="overlay">
+		<h2>Paused</h2>
+		<div class="small">ESC 키를 눌러 일시정지 해제</div>
+
+		<div>
+			<p>난이도</p>
+			<label><input type="radio" name="difficulty" value="normal">Normal</label>
+			<label><input type="radio" name="difficulty" value="hard" checked>Hard</label>
+		</div>
+
+		<div>
+			<label><input type="checkbox" name="background" value="Y">배경 표시</label>
+		</div>
+	</div>
+	<video id="background-video" autoplay loop muted>
+		<source src="./video.mp4" type="video/mp4">
+	</video>
+	<script src="script.js"></script>
+</body>
+</html>

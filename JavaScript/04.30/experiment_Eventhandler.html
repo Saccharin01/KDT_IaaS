@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <button id="mmyButton">Click me</button>
+  <p id="myButton">씨발아</p>
+<script>
+    // HTML 요소를 선택
+    var button = document.getElementById("myButton");
+
+    // 이벤트 핸들러 함수 정의
+    function handleClick() {
+        alert("Button clicked!");
+    }
+
+    // 버튼 요소의 onclick 이벤트 속성에 이벤트 핸들러 함수를 할당
+    button.onclick = handleClick;
+</script> -->
+
+
+
+<button class="btn">Click me</button>
+<script>
+    const btn = document.querySelector('.btn');
+
+    // 이벤트 핸들러 프로퍼티 방식은 이벤트에 하나의 이벤트 핸들러만을 바인딩할 수 있다
+    // 첫번째 바인딩된 이벤트 핸들러 => 실행되지 않는다.
+    btn.onclick = function() {
+        alert('① Button clicked 1');
+    };
+
+    // 두번째 바인딩된 이벤트 핸들러
+    btn.onclick = function() {
+        alert('① Button clicked 2'); // << 실행결과 
+    };
+</script>
+</body>
+</html>

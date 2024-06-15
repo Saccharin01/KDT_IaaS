@@ -1,0 +1,14 @@
+.header{
+  display: grid;
+  justify-content: center;
+  grid-row: 1/2;
+  grid-column: 1/9;
+}  
+.header>div:nth-child(1){
+  margin: 10% 0 10% 0;
+}
+.header>div:nth-child(1)>p{
+  font-family: 'gasoek one', monospace;
+  font-size: 1vw;
+  text-align: center;
+}

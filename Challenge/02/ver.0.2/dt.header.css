@@ -1,0 +1,12 @@
+.header{
+  display: grid;
+  justify-content: center;
+  grid-area: header;
+}  
+.header>div:nth-child(1){
+  display: flex;
+  font-family: 'yeon sung';
+  font-size: 2vh;
+  text-align: center;
+  background-color: rgb(99, 99, 252);
+}

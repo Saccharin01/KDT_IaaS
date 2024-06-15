@@ -1,0 +1,39 @@
+.main{
+  grid-row: 2/9;
+  grid-column: 1/5;
+  margin: 5% 3% 5% 0;
+  min-width: 320px;
+
+}
+.main>div:nth-child(1){
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  min-width: 80%;
+
+
+}
+.main>div:nth-child(1)>div{
+  background-color: beige;
+  margin: 1.5vh;
+  min-width: 80%;
+}
+.main>div:nth-child(1)>div:nth-child(1){
+  background-color: rgb(255, 111, 111);
+  font-family: 'yeon sung';
+  font-size: 1vw;
+  min-width: 80%;
+}
+.main>div:nth-child(1)>div:nth-child(2){
+  background-color: slateblue;
+  min-width: 80%;
+}
+.main>div:nth-child(1)>div:nth-child(3){
+  background-color: aqua;
+  min-width: 80%;
+}
+.main>div:nth-child(1)>div:nth-child(4){
+  background-color: aliceblue;
+  min-width: 80%;
+}

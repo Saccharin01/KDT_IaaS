@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+     const xhr = new XMLHttpRequest();
+     console.dir(xhr);
+      const getJson = ()=>{
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://apis.data.go.kr/6300000/eventDataService/eventDataListJson?serviceKey=Me%2FMuO55x%2B9wjLDeYl9RoSbEbVNZuF1eg4GGtNtw0ezd8EzDfprXxSxoRQPRSxrKf45kzYf3jCWnPGyQNh2MIQ%3D%3D&numOfRows=10&pageNo=1', true);
+
+        xhr.addEventListener("load", ()=>{
+          if(xhr.status === 200){
+            console.log("데이터 받은 후의 조회 시작점")
+            console.dir(xhr);
+            const result = JSON.parse(xhr.responseText);
+            console.dir(result)
+            console.log(result.msgBody)
+            console.dir(result.msgBody)
+            console.dir(result.msgBody[0])
+            console.dir(result.msgBody[0].title)
+            result.msgBody.forEach(element => {
+              console.log(element)
+              
+            })
+
+        // const xhr = new XMLHttpRequest();
+        // xhr.open('GET', 'http://apis.data.go.kr/6300000/eventDataService/eventDataListJson?serviceKey=Me%2FMuO55x%2B9wjLDeYl9RoSbEbVNZuF1eg4GGtNtw0ezd8EzDfprXxSxoRQPRSxrKf45kzYf3jCWnPGyQNh2MIQ%3D%3D&numOfRows=10&pageNo=1', true);
+
+        // xhr.addEventListener("load", ()=>{
+        //   if(xhr.status === 200){
+        //     console.log("데이터 받은 후의 조회 시작점")
+        //     console.dir(xhr);
+        //     const result = JSON.parse(xhr.responseText);
+        //     console.dir(result)
+        //     console.log(result)
+          }
+        })
+        xhr.send()
+      };
+      getJson()
+
+  </script>
+</body>
+</html>

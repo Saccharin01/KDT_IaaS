@@ -1,0 +1,7 @@
+.object{
+  grid-area: object;
+}
+
+.medPrimary{
+  grid-area: medPrimary;
+}

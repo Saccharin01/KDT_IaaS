@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* body>div>h1{
+      color: blue;
+    } */
+
+    body>div>h1 {
+      color: beige;
+    }
+  </style>
+  </style>
+</head>
+
+
+<body>
+  <div id="root">
+    <h1>조우식</h1>
+  </div>
+
+
+  <div class="click">
+    클릭클릭
+  </div>
+
+
+  <script>
+    let test = document.getElementById('root')
+    console.log(test)
+    test.style.color = "red"
+
+
+    let test2 = document.querySelector('#root')
+    console.log(test2)
+
+
+    let h1 = window.document.getElementsByClassName('h1');
+    console.log(h1)
+    
+
+window.document.getElementsByName
+
+    let h2 = window.document.getElementsByTagName('h1')
+    console.log(h2);
+
+    // h2[0].style.color = "gray"
+       
+    console.log(h2[0].style.color);
+    // let h1 = window.document.getElementsByTagName('h1');
+    // console.log(h1);
+    // h1[0].style.color = "blue";
+    // console.log(h1[0].style.color);
+
+    
+  </script>
+  </body>
+</html>

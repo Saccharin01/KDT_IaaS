@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <h1>조우식</h1>
+  </div>
+  <script>
+    window.console.log(document.getElementsByTagName('h1'));
+
+    window.console.log(document.getElementsByTagName('h1')[0].innerText);
+
+    var h1 = document.getElementsByTagName('h1')[0];
+
+    
+    h1.innerText = "공미남";
+    h1.style.color = "pink";
+    h1.style.backgroundColor = "gray";
+
+  </script>
+</body>
+</html>

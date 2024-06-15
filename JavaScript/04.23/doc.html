@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+
+    <div>김수현</div>
+    <div>유효영</div>
+    <div>조자연</div>
+
+
+  </div>
+  <script>
+    // let root = window.document.getElementById("root");
+    // console.log(root)
+    // console.dir(root)
+    // root.id = "container";
+    // console.dir(root)
+
+    // let watch = window.document.getElementsByTagName("div")
+
+    // console.log(watch)
+
+    // root.childNodes[2] = "문혜림"
+    // console.log(watch)
+
+
+    // watch[1].childNodes = "문혜림"
+    // console.log(watch)
+
+    let root = window.document.getElementById("root")
+    console.dir(root.children);
+    console.dir(root.children[0]);
+    console.dir(root.children[0].innerHTML)
+
+    root.children[0].innerHTML = "문혜림"
+    root.children[1].innerHTML = "야뀐 문혜림"
+    root.children[2].innerHTML = "바뀐 문혜림"
+    
+    let arr = ['배성빈','신지윤', '김인티저'];
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    for(i = 0; i<root.children.length; i++){
+      if(arr[i] === "공욱재"){
+        arr[i] = "이종수";
+      }
+      root.children[i].innerHTML = arr[i]
+   }
+
+       window.console.log(root)
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+.media{
+  grid-row: 2/9;
+  grid-column: 5/10;
+  margin: 5% 3% 5% 0;
+  min-width: 320px;
+}

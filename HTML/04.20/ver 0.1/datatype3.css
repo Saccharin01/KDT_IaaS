@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap > div {
+
+    background-color: rgb(255, 188, 63);
+    border: 1px solid orangered;
+}
+
+/* .wrap {
+  grid-template-areas: 
+  ". header ."
+  ". . main"
+  "media . main"
+"footer footer footer"
+} */
+.wrap {
+    height: 90vh;
+    width: 90vw;
+    display: grid;
+    /* grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: bisque;
+
+}
+.header {
+    display: grid;
+    justify-content: center;
+    grid-row: 1/2;
+    grid-column: 1/9;
+}
+.header > div:nth-child(1) {
+    margin: 10% 0;
+}
+.header > div:nth-child(1) > p {
+    font-family: 'gasoek one', monospace;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.main {
+    grid-row: 2/9;
+    grid-column: 5/10;
+    margin: 5% 3% 5% 0;
+}
+.main > div:nth-child(1) {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.main > div:nth-child(1) > div {
+    background-color: beige;
+}
+.main > div:nth-child(1) > div:nth-child(1) {
+    background-color: rgb(255, 111, 111);
+    margin: 2vh;
+    font-family: 'yeon sung';
+    font-size: 1.5rem;
+}
+.main > div:nth-child(1) > div:nth-child(2) {
+    background-color: slateblue;
+}
+
+.media {
+    grid-row: 3/8;
+    grid-column: 1/4;
+}
+.footer {
+    grid-row: 9/10;
+    grid-column: 1/9;
+
+}

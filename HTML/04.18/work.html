@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var myinfo = {
+      name : "조우식",
+      1: "응애"
+    }
+
+    window.console.log(myinfo)
+    
+    myinfo.myjob = "developer";
+
+    console.log(myinfo);
+    window.console.log(myinfo.name);
+    window.console.log(myinfo["name"]);
+    window.console.log(myinfo[1])
+
+    window.console.log(myinfo.name + myinfo[1])
+    window.console.log( myinfo[1] + "," + myinfo.name)
+
+
+    
+    // window.console.log(nameList[3])
+    // window.console.log(nameList)
+    
+    var nameList = [
+      "구하림",
+      "김이모",
+      "문혜림",
+      "김수현",
+      "김 인티져",
+    ];
+
+    window.console.log(nameList[2] , nameList[4])
+
+var nameList1 = ["구하림"]
+var nameList2 = ["유으뜸"]
+var nameList3 = ["김정수"]
+var nameList4 = ["김이모"]
+var nameList5 = ["김수현" , "조우식" , "한아름"]
+
+
+window.console.log(nameList2[0] , nameList5[0])
+window.console.log(nameList5[2], "+", nameList4[0] )
+
+  </script>
+</body>
+</html>

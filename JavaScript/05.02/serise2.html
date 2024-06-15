@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // return [1,2,3,4,5,6,7,8,9,0,`1`,'2','3','6'];
+    // // 문자열이나 숫자열일 것이라는 추론의 근거는?
+    // // updatedPlanets[i]에서 대괄호를 사용했기 때문에
+    // //대괄호에서는 배열 값을 사용하는데, 그럼 문자열이나 숫자 밖에 못 옴
+    //단위 테스트
+    function addItem(array, item, index){
+      let newArray = [];
+ 
+      
+      for(let i = 0; i <= array.length; i++){
+        if(i === index){
+          newArray[i] = item;
+        }else{
+          newArray[i] = array[i]
+        }
+      
+    }
+    return console.log(2)
+  }
+
+
+
+
+
+
+    let planets = ["테스팅", 'testing', 'experiment'];
+    //임의 배열 하나가 초기화
+    let updatedPlanets = addItem(planets,"something",10);
+    //함수가 호출되었음 => 리턴값이 있음
+
+    for(let i = 0; i < updatedPlanets.length; i++){
+      // length 값이 있다는 것 => 데이터 타입 유추 가능 (배열 혹은 스트링)
+      console.log(updatedPlanets[i]);
+    }
+
+
+
+
+  </script>
+</body>
+</html>

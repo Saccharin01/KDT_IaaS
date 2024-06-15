@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* *{
+      margin: 0px;
+      padding: 0px;
+    }
+    */
+    #root{
+      width: 100vw;
+      height: 100vh;
+    }
+    #animateDiv {
+      position: absolute;
+      z-index: 1;
+      width: 12vw;
+      height: 16vh;
+      border-radius: 100%;
+      background-color: black;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div id="animateDiv"></div>
+  </div>
+  <script>    
+    (function moveDiv() {
+      const div = document.getElementById('animateDiv');
+      let positionX = 12;
+      let positionY = 16;
+      let direction = 'right';
+      function animate() {
+        if (direction === 'right') {
+          if (positionX < 100) {
+            positionX++;
+            div.style.left = positionX-12 + '%';
+          } else {
+            direction = 'down';
+          }
+        } else if (direction === 'down') {
+          if (positionY < 100) {
+            positionY++;
+            div.style.top = positionY-16 + '%';
+          } else {
+            direction = 'left';
+          }
+        } else if (direction === 'left') {
+          if (positionX > 0) {
+            positionX--;
+            div.style.left = positionX + '%';
+          } else {
+            direction = 'up';
+          }
+        } else if (direction === 'up') {
+          if (positionY > 0) {
+            positionY--;
+            div.style.top = positionY + '%';
+          } else {
+            direction = 'right';
+          }
+        }
+        setTimeout(animate, 16);
+      }
+      animate();
+      
+    })();
+    
+  </script>
+</body>
+</html>

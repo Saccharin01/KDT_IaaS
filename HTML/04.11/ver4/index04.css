@@ -1,0 +1,76 @@
+:root{
+  --sb: 1px solid black
+}
+
+/* 변수 값 선언 및 할당 */
+
+*{
+  margin: 0;
+  padding: 0;
+}     
+  .wrap{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(49, 49, 49);
+  }
+  /* .wrap>div{
+    height: 50vh;
+  } */
+    .location{
+      background-color: rgb(241, 40, 40);
+      border:var(--sb);
+    }
+    .location>div:nth-child(1){
+      display: flex;
+      align-items: center;
+    }
+
+    .location>div>div:nth-child(1){
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .location>div>div:nth-child(2){
+      display: flex;
+      flex-direction: row;
+    }
+    
+    
+        .titnum{
+        border: var(--sb);
+        background-color: rgb(80, 80, 80);
+      }
+      .titnum>div:nth-child(1){
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+      .titnum>div:nth-child(2){
+        text-align: center;
+      }
+      .titnum>div:nth-child(3){
+        display: flex;
+        justify-content: center;
+      }
+      .titnum>div:nth-child(4)>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+
+
+
+
+
+
+     
+
+
+
+
+
+

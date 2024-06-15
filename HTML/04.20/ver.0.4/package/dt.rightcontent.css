@@ -1,0 +1,32 @@
+.medPrimary{
+  grid-area: medPrimary;
+  margin-bottom: 2%;
+  margin-right: 5%;
+  overflow: auto;
+  margin-top: 40px;
+}
+.medPrimary>details>summary{
+  background-color: rgb(255, 126, 52);
+  border: 2px dotted black;
+  margin: 3%;
+
+}
+
+.medPrimary>div:nth-child(2)>details>summary{
+  background-color: rgb(224, 211, 92);
+  border: 2px dotted black;
+  margin: 3%;
+
+}
+
+.discription{
+  background-color: rgb(255, 120, 79);
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-left: 1%;
+  margin-right: 1%;
+  }
+
+  .annotation{
+    font-size: 0.9em;
+  }
