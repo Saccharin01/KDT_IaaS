@@ -1,0 +1,387 @@
+:root{
+  --sb: 1px solid black
+}
+
+/* 변수 값 선언 및 할당 */
+
+*{
+  margin: 0;
+  padding: 0;
+}     
+  .wrap{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(49, 49, 49);
+  }
+  /* .wrap>div{
+    height: 50vh;
+  } */
+    .location{
+      background-color: rgb(255, 255, 255);
+      border:var(--sb);
+      height: 7vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .location>div:nth-child(1){
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .location>div:nth-child(1)>div:nth-child(1){
+      display: flex;
+      font-size: 1vh;
+    }
+    .location>div:nth-child(1)>div:nth-child(2){
+      display: flex;
+    }
+    .location>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>details>summary
+    .location>div:nth-child(1)>div:nth-child(3){
+      display: flex;
+    }
+    .location>div:nth-child(1)>div:nth-child(3)>button:nth-child(1){
+      background-color: rgb(36, 36, 36);
+      color: rgb(255, 255, 255);
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+
+    .location>div:nth-child(1)>div:nth-child(3)>button:nth-child(2){
+      background-color: rgb(255, 255, 255);
+      border: 0px;
+/* *피그마에서는 경계가 없는 버튼이였음. */
+    }
+   
+    
+    
+        .titnum{
+        border: var(--sb);
+        background-color: #101010;
+        /* background-color: gray; */
+        height: 100vh;
+      }
+      .titnum>div:nth-child(1)>div:nth-child(1){
+          padding-left: 5%;
+          padding-right: 5%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          background-color: black;
+          color: white;
+          height: 45px;
+          align-items: center;
+        }
+        .titnum>div:nth-child(1)>div:nth-child(1)>div:nth-child(1){
+          font-size: 1rem;
+
+        }
+        
+        .titnum>div:nth-child(2)>a{
+          color: white;
+        }
+
+      .titnum>div:nth-child(2)>div:nth-child(1){
+        text-align: center;
+        justify-content: center;
+        padding: 12px 0 12px 0;
+        color: rgb(211, 211, 211);
+        background-color: #1D1D1F;
+        height: 10%;
+
+      }
+      .titnum>div:nth-child(3){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .titnum>div:nth-child(3)>div:nth-child(1){
+        background-color: #686868;
+        margin-top: 30vh;
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .titnum>div:nth-child(3)>div:nth-child(1)>div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(156, 154, 151);
+        width: 50%;
+        height: 100%;
+      }
+      .titnum>div:nth-child(4){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+      }
+      .titnum>div:nth-child(4)>div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 50px;
+        background-color: rgb(93, 93, 255);
+        justify-content: center;
+        border-radius: 20px;
+      }
+      .titnum>div:nth-child(5){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+        .titnum>div:nth-child(5)>div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        margin-top: 50px;
+        background-color: #686868;
+        color: white;
+      }
+      .mainPoint{
+        height: 100vh;
+        width: 100vw;
+        background-color: #1D1D1F;
+      }
+      .mainPoint>div:nth-child(1){
+        display: flex;
+        justify-content: space-evenly;
+        align-items: end;
+        height: 15%;
+        background-color: #101010;
+        padding-bottom: 20px;
+      }
+      .mainPoint>div:nth-child(1)>div:nth-child(1){
+        color: gray;
+      }
+      .mainPoint>div:nth-child(1)>div:nth-child(2){
+        color: rgb(107, 107, 255);
+      }
+
+      .mainPoint>div:nth-child(2){
+        display: flex;
+        justify-content: center;
+        height: 85%;
+        background-color:#3a3a3a;
+        padding-bottom: 100px;
+        align-items: center;
+      }
+      .mainPoint>div:nth-child(2)>div:nth-child(1){
+        background-color: rgb(88, 88, 88);
+        width: 100vw;
+        height: 40vh;
+        margin-left: 20vw;
+        margin-right: 20vw;
+      }
+      .mainPoint>div:nth-child(2)>div:nth-child(1)>div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+      .mainPoint>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>span:nth-child(1){
+        background-color: #686868;
+        border-radius: 10px;
+
+      }
+      .mainPoint>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>span:nth-child(2){
+        background-color: #686868;
+        border-radius: 10px;
+      }
+      .lookinside{
+        background-color: #1D1D1F;
+        width: 100vw;
+        height: 100vh;
+      }
+      .lookinside>div:nth-child(1){
+        padding-left: 15%;
+        display: flex;
+        align-items: end;
+        height: 20%;
+        color: gray;
+      }
+      .lookinside>div:nth-child(2){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65%;
+      }
+      .lookinside>div:nth-child(2)>div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(117, 117, 117);
+        width: 70vw;
+        height: 40vh;
+      }
+      .lookinside>div:nth-child(3){
+        height: 5%;
+        display: flex;
+        justify-content: center;
+        color: white;
+      }
+      .lookinside>div:nth-child(4){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5%;
+      }
+      .lookinside>div:nth-child(4) > div:nth-child(1){
+        height: 40px;
+        display: flex;
+        gap: 5px;
+        border-radius: 20px;
+        background-color: aqua;
+        align-items: center;
+        justify-content: center;
+        width: 20vw;
+      }
+      .explore{
+        background-color: #101010;
+
+        width: 100vw;
+        height: 160vh;
+      }
+      .explore>div:nth-child(1){
+        color: gray;
+        display: flex;
+        align-items: end;
+        height: 10%;
+        justify-content:baseline;
+        padding-left: 10%;
+      }
+      .explore>div:nth-child(2){
+        height: 90%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 10px;
+      }
+      .explore>div:nth-child(2)>div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        color: white;
+        padding-bottom: 40px;
+      }
+      .explore>div:nth-child(2)>div:nth-child(2){
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: beige;
+      }
+      .explore>div:nth-child(2)>div:nth-child(3){
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: beige;
+      }
+      .explore>div:nth-child(2)>div:nth-child(4){
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: beige;
+      }
+      .explore>div:nth-child(2)>div:nth-child(5){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: beige;
+
+
+      }
+      .explore>div:nth-child(2)>div:nth-child(6){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: beige;
+      }
+      .explore>div:nth-child(2)>div:nth-child(7){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        height: 10%;
+        padding-top: 150px;
+      }
+      .explore>div:nth-child(2)>div:nth-child(7)>div:nth-child(1){
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: gray;
+        width: 400px;
+        height: 50px;
+        border-radius: 20px;
+      }
+      .explore>div:nth-child(2)>div:nth-child(7)>div:nth-child(1)>div:nth-child(1){
+        color: white;
+      }
+      .explore>div:nth-child(2)>div:nth-child(7)>div:nth-child(1)>div:nth-child(2){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(102, 102, 245);
+        border-radius: 30px;
+        height: 80%;
+        width: 50px;
+      }
+
+
+
+
+
+
+   
+ 
+     
+
+
+     
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
