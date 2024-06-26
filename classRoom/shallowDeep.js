@@ -3,7 +3,7 @@ const original = [
   { name: "사카린", age: 4 },
 ];
 
-const swallow = original.map((ele) => {
+const shallow = original.map((ele) => {
   return ele;
 });
 const deep = original.map((ele) => {
@@ -16,12 +16,12 @@ const deep = original.map((ele) => {
 
 
 console.log("원본 배열 : ", original)
-console.log("swallowCopy : ", swallow)
+console.log("shallow : ", shallow)
 console.log("deepCody : ", deep)
 
 original[0].name = "Saccharin"
 
 console.log("변경 후의 결과 값")
 console.log("원본 배열 : ", original)
-console.log("swallowCopy : ", swallow)
+console.log("shallow : ", shallow)
 console.log("deepCody : ", deep)
