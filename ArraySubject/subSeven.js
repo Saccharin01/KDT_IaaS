@@ -5,4 +5,6 @@ const items = [
   { name: "쥬스", price: 2 },
 ];
 
-// todo 가격이 1000원 이상인 상품만 나열하도록 수정하세요 분할정복 알고리즘 정렬 알고리즘
+// todo 가격이 1000원 이상인 상품만 나열하도록 수정하세요
+
+const expensiveItem = items.someMethod((elemenet)=>{return elemenet.price >= 1000;})
